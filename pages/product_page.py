@@ -12,8 +12,12 @@ class ProductPage(BasePage):
     )
 
     PRODUCT_PRICE = (
-        By.ID,
-        "apex-pricetopay-accessibility-label"
+        By.CSS_SELECTOR,
+        "#corePrice_feature_div .a-price .a-offscreen, "
+        "#apex_desktop .a-price .a-offscreen, "
+        "#price_inside_buybox, "
+        "#newBuyBoxPrice, "
+        "#priceblock_ourprice"
     )
 
     ADD_TO_CART_BUTTON = (
